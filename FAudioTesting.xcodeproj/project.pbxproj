@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* FAudioTestingAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FAudioTestingAppDelegate.mm */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* FAudioTestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* FAudioTestingViewController.xib */; };
+		28D7ACF80DDB3853001CB0EB /* FAudioTestingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* FAudioTestingViewController.mm */; };
+		ED4013CE12BA0EE0004E150E /* clear.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED4013CD12BA0EE0004E150E /* clear.xml */; };
+		ED40143412BA1F38004E150E /* pico.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED40143312BA1F38004E150E /* pico.wav */; };
+		ED7789BF13674435005675A0 /* vocoder4.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED7789BE13674435005675A0 /* vocoder4.xml */; };
+		ED7789C5136744E2005675A0 /* vocoder24.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED7789C4136744E2005675A0 /* vocoder24.xml */; };
+		ED853F1E11D157E200D691BC /* 1.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED853F1D11D157E200D691BC /* 1.xml */; };
+		ED89401911B9C1C700156A4A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED89401811B9C1C700156A4A /* AudioToolbox.framework */; };
+		ED89401E11B9C1DC00156A4A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED89401D11B9C1DC00156A4A /* AVFoundation.framework */; };
+		ED898139125F2CBD002E2CD0 /* mega.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED898138125F2CBD002E2CD0 /* mega.xml */; };
+		ED90645F11FD8FA3006B4D96 /* saved.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED90645E11FD8FA3006B4D96 /* saved.wav */; };
+		ED90647311FD917A006B4D96 /* play.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED90647211FD917A006B4D96 /* play.xml */; };
+		ED9209DB11D1FCC700EB708D /* 2.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED9209DA11D1FCC700EB708D /* 2.xml */; };
+		ED920A8611D21A7A00EB708D /* piano.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED920A8511D21A7A00EB708D /* piano.xml */; };
+		ED95A59A12567B5600248181 /* todo.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED95A59912567B5600248181 /* todo.xml */; };
+		ED95FEC91200885500DC1C62 /* wally.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED95FEC81200885500DC1C62 /* wally.xml */; };
+		ED95FF01120090C200DC1C62 /* vader.xml in Resources */ = {isa = PBXBuildFile; fileRef = ED95FF00120090C200DC1C62 /* vader.xml */; };
+		ED95FF0B1200917F00DC1C62 /* vader.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED95FF0A1200917F00DC1C62 /* vader.wav */; };
+		EDB42D18135C840A00EBF089 /* vocoder.xml in Resources */ = {isa = PBXBuildFile; fileRef = EDB42D17135C840A00EBF089 /* vocoder.xml */; };
+		EDB42E16135C9E9F00EBF089 /* vocoder2.xml in Resources */ = {isa = PBXBuildFile; fileRef = EDB42E15135C9E9F00EBF089 /* vocoder2.xml */; };
+		EDB57FD911C7970500C8A513 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = EDB57FD811C7970500C8A513 /* test.xml */; };
+		EDB580AA11C79C2D00C8A513 /* libFAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3E40AD11C77BEF00B88220 /* libFAudio.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		EDB580C511C79DB900C8A513 /* libFAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB57FEC11C7990C00C8A513 /* libFAudio.a */; };
+		EDD0578711D4B80300298786 /* carrier.wav in Resources */ = {isa = PBXBuildFile; fileRef = EDD0578611D4B80300298786 /* carrier.wav */; };
+		EDD0582911D4FDCA00298786 /* wawa.xml in Resources */ = {isa = PBXBuildFile; fileRef = EDD0582811D4FDCA00298786 /* wawa.xml */; };
+		EDF2BB1511F73A6400056C19 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		EDF47A0B127185800059DF4C /* exorcist.xml in Resources */ = {isa = PBXBuildFile; fileRef = EDF47A0A127185800059DF4C /* exorcist.xml */; };
+		EDF47A39127186470059DF4C /* Wavs in Resources */ = {isa = PBXBuildFile; fileRef = EDF47A2A127186470059DF4C /* Wavs */; };
+		EDF47A55127187600059DF4C /* possessed_ambiente.wav in Resources */ = {isa = PBXBuildFile; fileRef = EDF47A54127187600059DF4C /* possessed_ambiente.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDC2EAA211B8205B002B198A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../FAudio/FAudioSystem.h;
+			dstSubfolderSpec = 12;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* FAudioTestingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAudioTestingAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* FAudioTestingAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FAudioTestingAppDelegate.mm; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* FAudioTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAudioTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* FAudioTestingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FAudioTestingViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; explicitFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* FAudioTestingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAudioTestingViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* FAudioTestingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FAudioTestingViewController.mm; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* FAudioTesting_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAudioTesting_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* FAudioTesting-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FAudioTesting-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		ED3E40AD11C77BEF00B88220 /* libFAudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFAudio.a; path = "../FAudio/build/Debug-iphonesimulator/libFAudio.a"; sourceTree = SOURCE_ROOT; };
+		ED4013CD12BA0EE0004E150E /* clear.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = clear.xml; sourceTree = "<group>"; };
+		ED40143312BA1F38004E150E /* pico.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pico.wav; sourceTree = "<group>"; };
+		ED7789BE13674435005675A0 /* vocoder4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vocoder4.xml; sourceTree = "<group>"; };
+		ED7789C4136744E2005675A0 /* vocoder24.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vocoder24.xml; sourceTree = "<group>"; };
+		ED853F1D11D157E200D691BC /* 1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1.xml; sourceTree = "<group>"; };
+		ED89401811B9C1C700156A4A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ED89401D11B9C1DC00156A4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ED898138125F2CBD002E2CD0 /* mega.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mega.xml; sourceTree = "<group>"; };
+		ED90645E11FD8FA3006B4D96 /* saved.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = saved.wav; sourceTree = "<group>"; };
+		ED90647211FD917A006B4D96 /* play.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = play.xml; path = ../FAudioTesting2yPunto/play.xml; sourceTree = "<group>"; };
+		ED9209DA11D1FCC700EB708D /* 2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2.xml; sourceTree = "<group>"; };
+		ED920A8511D21A7A00EB708D /* piano.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = piano.xml; sourceTree = "<group>"; };
+		ED95A59912567B5600248181 /* todo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = todo.xml; sourceTree = "<group>"; };
+		ED95FEC81200885500DC1C62 /* wally.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wally.xml; sourceTree = "<group>"; };
+		ED95FF00120090C200DC1C62 /* vader.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vader.xml; sourceTree = "<group>"; };
+		ED95FF0A1200917F00DC1C62 /* vader.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vader.wav; sourceTree = "<group>"; };
+		EDB42D17135C840A00EBF089 /* vocoder.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vocoder.xml; sourceTree = "<group>"; };
+		EDB42E15135C9E9F00EBF089 /* vocoder2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vocoder2.xml; sourceTree = "<group>"; };
+		EDB57FD811C7970500C8A513 /* test.xml */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = test.xml; sourceTree = "<group>"; };
+		EDB57FEC11C7990C00C8A513 /* libFAudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFAudio.a; path = "../FAudio/build/Debug-iphoneos/libFAudio.a"; sourceTree = SOURCE_ROOT; };
+		EDC8EF0A11BD0C3F0064A5E8 /* FAudioWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAudioWrapper.h; path = ../FAudio/FAudioWrapper.h; sourceTree = SOURCE_ROOT; };
+		EDD0578611D4B80300298786 /* carrier.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = carrier.wav; sourceTree = "<group>"; };
+		EDD0582811D4FDCA00298786 /* wawa.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wawa.xml; sourceTree = "<group>"; };
+		EDF47A0A127185800059DF4C /* exorcist.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = exorcist.xml; sourceTree = "<group>"; };
+		EDF47A2A127186470059DF4C /* Wavs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Wavs; sourceTree = "<group>"; };
+		EDF47A54127187600059DF4C /* possessed_ambiente.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = possessed_ambiente.wav; path = Wavs/possessed_ambiente.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB580AA11C79C2D00C8A513 /* libFAudio.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				ED89401911B9C1C700156A4A /* AudioToolbox.framework in Frameworks */,
+				ED89401E11B9C1DC00156A4A /* AVFoundation.framework in Frameworks */,
+				EDB580C511C79DB900C8A513 /* libFAudio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* FAudioTestingAppDelegate.h */,
+				1D3623250D0F684500981E51 /* FAudioTestingAppDelegate.mm */,
+				28D7ACF60DDB3853001CB0EB /* FAudioTestingViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* FAudioTestingViewController.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* FAudioTesting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EDB57FEE11C7991100C8A513 /* libFAudio_dep */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EDC8EF0A11BD0C3F0064A5E8 /* FAudioWrapper.h */,
+				32CA4F630368D1EE00C91783 /* FAudioTesting_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED40143312BA1F38004E150E /* pico.wav */,
+				EDF47A2A127186470059DF4C /* Wavs */,
+				EDF47A54127187600059DF4C /* possessed_ambiente.wav */,
+				EDF47A0A127185800059DF4C /* exorcist.xml */,
+				ED898138125F2CBD002E2CD0 /* mega.xml */,
+				ED95A59912567B5600248181 /* todo.xml */,
+				2899E5210DE3E06400AC0155 /* FAudioTestingViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* FAudioTesting-Info.plist */,
+				EDB57FD811C7970500C8A513 /* test.xml */,
+				EDD0582811D4FDCA00298786 /* wawa.xml */,
+				EDD0578611D4B80300298786 /* carrier.wav */,
+				ED90645E11FD8FA3006B4D96 /* saved.wav */,
+				ED95FF0A1200917F00DC1C62 /* vader.wav */,
+				ED920A8511D21A7A00EB708D /* piano.xml */,
+				ED95FF00120090C200DC1C62 /* vader.xml */,
+				ED90647211FD917A006B4D96 /* play.xml */,
+				ED853F1D11D157E200D691BC /* 1.xml */,
+				ED95FEC81200885500DC1C62 /* wally.xml */,
+				ED9209DA11D1FCC700EB708D /* 2.xml */,
+				ED4013CD12BA0EE0004E150E /* clear.xml */,
+				ED7789C4136744E2005675A0 /* vocoder24.xml */,
+				ED7789BE13674435005675A0 /* vocoder4.xml */,
+				EDB42D17135C840A00EBF089 /* vocoder.xml */,
+				EDB42E15135C9E9F00EBF089 /* vocoder2.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				ED89401811B9C1C700156A4A /* AudioToolbox.framework */,
+				ED89401D11B9C1DC00156A4A /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDB57FEE11C7991100C8A513 /* libFAudio_dep */ = {
+			isa = PBXGroup;
+			children = (
+				EDB57FEC11C7990C00C8A513 /* libFAudio.a */,
+				ED3E40AD11C77BEF00B88220 /* libFAudio.a */,
+			);
+			name = libFAudio_dep;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* FAudioTestingDevice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FAudioTestingDevice" */;
+			buildPhases = (
+				EDC2EAA211B8205B002B198A /* CopyFiles */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FAudioTestingDevice;
+			productName = FAudioTesting;
+			productReference = 1D6058910D05DD3D006BFB54 /* FAudioTesting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FAudioTesting" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* FAudioTestingDevice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF2BB1511F73A6400056C19 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* FAudioTestingViewController.xib in Resources */,
+				ED95A59A12567B5600248181 /* todo.xml in Resources */,
+				EDB57FD911C7970500C8A513 /* test.xml in Resources */,
+				ED853F1E11D157E200D691BC /* 1.xml in Resources */,
+				ED9209DB11D1FCC700EB708D /* 2.xml in Resources */,
+				ED920A8611D21A7A00EB708D /* piano.xml in Resources */,
+				EDD0578711D4B80300298786 /* carrier.wav in Resources */,
+				EDD0582911D4FDCA00298786 /* wawa.xml in Resources */,
+				ED90645F11FD8FA3006B4D96 /* saved.wav in Resources */,
+				ED90647311FD917A006B4D96 /* play.xml in Resources */,
+				ED95FEC91200885500DC1C62 /* wally.xml in Resources */,
+				ED95FF01120090C200DC1C62 /* vader.xml in Resources */,
+				ED95FF0B1200917F00DC1C62 /* vader.wav in Resources */,
+				ED898139125F2CBD002E2CD0 /* mega.xml in Resources */,
+				EDF47A0B127185800059DF4C /* exorcist.xml in Resources */,
+				EDF47A39127186470059DF4C /* Wavs in Resources */,
+				EDF47A55127187600059DF4C /* possessed_ambiente.wav in Resources */,
+				ED4013CE12BA0EE0004E150E /* clear.xml in Resources */,
+				ED40143412BA1F38004E150E /* pico.wav in Resources */,
+				EDB42D18135C840A00EBF089 /* vocoder.xml in Resources */,
+				EDB42E16135C9E9F00EBF089 /* vocoder2.xml in Resources */,
+				ED7789BF13674435005675A0 /* vocoder4.xml in Resources */,
+				ED7789C5136744E2005675A0 /* vocoder24.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* FAudioTestingAppDelegate.mm in Sources */,
+				28D7ACF80DDB3853001CB0EB /* FAudioTestingViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FAudioTesting_Prefix.pch;
+				INFOPLIST_FILE = "FAudioTesting-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FAudio/build/Debug-iphoneos\"",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FAudio/build/Debug-iphonesimulator\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = FAudioTesting;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FAudioTesting_Prefix.pch;
+				INFOPLIST_FILE = "FAudioTesting-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FAudio/build/Release-iphoneos\"",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FAudio/build/Release-iphonesimulator\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = FAudioTesting;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos4.1;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FAudioTestingDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FAudioTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,124 @@
+<Root>
+<FAudio>
+	<FAudioParameters>
+		<!-- ejemplo parametros
+		<FAudioParameter ID="param" input="X" extern />
+		<FAudioParameterSet ID="set" input="X" output=1 />
+		<FAudioParameterOscilator ID="oscilador" frecuencia=1 amplitud=1 extern />
+		<FAudioParameterRange ID="range" inmin=0 inmax=1 outmin=0 outmax=1 />
+		<FAudioParameterTransition ID="transition" input=1 target=0 time=1 />
+		<FAudioParameterSelector ID="selector1" input="X" inmin=0 inmax=0.5 output=1 />
+		<FAudioParameterRandom ID="random1" input=1 min=0 max=1 />
+		<FAudioParameterAutoRandom ID="autorandom1" input=1 min=0 max=1 frec=1 />
+		-->
+	</FAudioParameters>
+	<FAudioGraph>
+	<FAudioNodeTube>
+		<FAudioNodeMix>
+			<FAudioNodeMix>
+				<FAudioNodeMix>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=125 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTone tone=125 />
+					</FAudioNodeVocoder>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=210 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTone tone=210 />
+					</FAudioNodeVocoder>
+				</FAudioNodeMix>
+				<FAudioNodeMix>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=360 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTone tone=360 />
+					</FAudioNodeVocoder>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=600 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTone tone=600 />
+					</FAudioNodeVocoder>
+				</FAudioNodeMix>
+			</FAudioNodeMix>
+			<FAudioNodeMix>
+				<FAudioNodeMix>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=1020 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTone tone=1020 />
+					</FAudioNodeVocoder>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=1725 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTone tone=1725 />
+					</FAudioNodeVocoder>
+				</FAudioNodeMix>
+				<FAudioNodeMix>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=2900 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTone tone=2900 />
+					</FAudioNodeVocoder>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=5000 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTone tone=5000 />
+					</FAudioNodeVocoder>
+				</FAudioNodeMix>
+			</FAudioNodeMix>
+		</FAudioNodeMix>
+		<FAudioNodeDelay amount=3 />
+		</FAudioNodeTube>
+		<!--
+		<FAudioNodeMix>
+			<FAudioNodeVocoder>
+				<FAudioNodeBiquad frec=100 amount=-20 mode=3 /><!-- BP ->
+				<FAudioNodeTube>
+					<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+					<FAudioNodeBiquad frec=100 amount=-20 mode=3 /><!-- BP ->
+				</FAudioNodeTube>
+			</FAudioNodeVocoder>
+			<FAudioNodeVocoder>
+				<FAudioNodeBiquad frec=200 amount=-20 mode=3 /><!-- BP ->
+				<FAudioNodeTube>
+					<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+					<FAudioNodeBiquad frec=200 amount=-20 mode=3 /><!-- BP ->
+				</FAudioNodeTube>
+			</FAudioNodeVocoder>
+				<FAudioNodeVocoder>
+				<FAudioNodeBiquad frec=400 amount=-20 mode=3 /><!-- BP ->
+				<FAudioNodeTube>
+					<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+					<FAudioNodeBiquad frec=400 amount=-20 mode=3 /><!-- BP ->
+				</FAudioNodeTube>
+			</FAudioNodeVocoder>
+			<FAudioNodeVocoder>
+				<FAudioNodeBiquad frec=800 amount=-20 mode=3 /><!-- BP ->
+				<FAudioNodeTube>
+					<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+					<FAudioNodeBiquad frec=800 amount=-20 mode=3 /><!-- BP ->
+				</FAudioNodeTube>
+			</FAudioNodeVocoder>
+		</FAudioNodeMix>
+		-->
+		<!-- ejemplo nodos
+		<FAudioNodeMix volumeA=1 volumeB=1 >
+			<FAudioNodeTube>
+			  <FAudioNodeSwitch select=1 >
+				<FAudioNodeVocoder />
+				<FAudioNodeNull />
+				<FAudioNodeMute />
+				<FAudioNodeLowPass frecuencia=22050 />
+				<FAudioNodeTone tone=440 volume=1 />
+				<FAudioNodeVolume volume=1 />
+				<FAudioNodeDelay amount=1 />
+				<FAudioNodeRDelay amount=1 volume=0.8 feedback=0.5 N=8/>
+				<FAudioNodePitch amount=0 />
+				<FAudioNodeWav volume="rY" loop=1 filename="vader.wav" />
+				<FAudioNodeOverdrive gain=1 level=1 /> <!-- gain es logaritmico... valores bajos se nota mas el efecto ->
+				<FAudioNodeCompressor ratio=1 threshold=1 knee=0 gain=0 />
+				<FAudioNodeNoiseGate level=0.1 response=10 />
+				<FAudioNodeAGC vmax=0.01 vmin=0.01 attack=0.1 release=0.1 />
+				<FAudioNodeOldOverdrive limit=1 ratio=20 gain=0 level=0 attack=0 release=0 />
+				<FAudioNodeEQparam frecuencia="rX" volumen="rY" q=12 />
+				<FAudioNodeBiquad frec="rX" amount=-20 q="rY" mode=1 /><!-- 1=LPF 2=HPF 3=BPF 4=NOTCH 5=EQP 6=LowShelf 7=HighShelf ->
+			  </FAudioNodeSwitch>
+			</FAudioNodeTube>
+		</FAudioNodeMix>
+		-->
+	</FAudioGraph>
+</FAudio>
+</Root>

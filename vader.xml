@@ -1,0 +1,17 @@
+<FAudio>
+	<FAudioParameters>
+		<FAudioParameterRange ID="rY" input="Y" outmin=0.05 outmax=0.5 />	
+	
+	</FAudioParameters>
+	
+	<FAudioGraph>
+		<FAudioNodeMix volumeA=0.3 volumeB=0.6 >
+			<FAudioNodeWav volume="rY" loop=1 filename="vader.wav" />
+			<FAudioNodeTube>
+				<FAudioNodePitch amount=-0.16 />
+				<FAudioNodeRDelay amount=0.005 volume=0.5 />
+			</FAudioNodeTube>
+		</FAudioNodeMix>
+
+	</FAudioGraph>
+</FAudio>

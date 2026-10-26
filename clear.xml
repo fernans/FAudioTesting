@@ -1,0 +1,14 @@
+<Root>
+<FAudio>
+	<FAudioParameters>
+		<FAudioParameter ID="Y" />
+		<FAudioParameterRange ID="noY" input="Y" outmin=1 outmax=0 />
+	</FAudioParameters>
+	<FAudioGraph>
+		<FAudioNodeMix volumeA="Y" volumeB="noY" >
+			<FAudioNodeNull />
+			<FAudioNodeWav loop=1 filename="pico.wav" />
+		</FAudioNodeMix>
+	</FAudioGraph>
+</FAudio>
+</Root>

@@ -1,0 +1,42 @@
+<Header>
+	<Name value="exortista new" />
+	<Icon value="Icons/ico-exorcist" />
+    <IconAlt value="Icons/ico-exorcist" />
+
+    <BackgroundTop value="Backs/capa-ayuda-muestra" />
+    <BackgroundBottom value="Backs/capa-ayuda-muestra" />
+	<PriorityY value="1" />
+</Header>
+<FAudio>
+	<FAudioParameters>
+		
+		<!-- -->
+		<FAudioParameter ID="Y" input=0.5 />
+		<FAudioParameter ID="X" input=0.5 />
+		<!-- --> 
+		<FAudioParameterSelector ID="zonaBandaSonoraX" input="Y" inmin=0 inmax=0.33 output="X" />
+		<!-- -->
+		<FAudioParameterSelector ID="zonaRespiracionX" input="Y" inmin=0.33 inmax=0.66 output="X" />
+		<FAudioParameterSelector ID="zonaLatidoX" input="Y" inmin=0.66 inmax=1 output="X" />
+		<!-- -->
+	</FAudioParameters>
+	<FAudioGraph>
+		<FAudioNodeMix volumeA=0.5 volumeB=0.5 >
+			<FAudioNodeMix volumeA=0.5 volumeB=0.5 >
+				<FAudioNodeWav volume="zonaBandaSonoraX" loop=1  filename="./Wavs/possessed-ambiente.wav" /><!-- volume="zonaBandaSonoraX" -->
+				<FAudioNodeMix volumeA=0.5 volumeB=0.5 >
+						<FAudioNodeWav volume="zonaRespiracionX" loop=1  filename="./Wavs/possessed-respiracion.wav" /> <!-- volume="zonaRespiracionX" -->
+						<FAudioNodeWav volume="zonaLatidoX" loop=1  filename="./Wavs/possessed-latido.wav" /> <!-- volume="zonaLatidoX" -->
+				</FAudioNodeMix>			
+			</FAudioNodeMix>		
+			<FAudioNodeTube >
+				<FAudioNodeOverdrive gain=0.08 level=0.37 />
+				<FAudioNodePitch amount=-0.25 />
+				<FAudioNodeMix volumeA=0.85 volumeB=0.15 >
+					<FAudioNodeNull />
+					<FAudioNodeDelay amount=0.1 />
+				</FAudioNodeMix>
+			</FAudioNodeTube>
+		</FAudioNodeMix>		
+	</FAudioGraph>
+</FAudio>

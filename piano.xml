@@ -1,0 +1,35 @@
+<FAudio>
+	<FAudioParameters>
+		<FAudioParameter ID="Y" input=0 />
+		<FAudioParameterRange ID="rY" input="Y" inmin=1 inmax=0 outmin=-0.4 outmax=0.4 />
+		<FAudioParameterRange ID="Init" input="Y" outmin=1 outmax=1 /> 
+		<FAudioParameterRange ID="rX" input="X" outmin=0.1 />
+		<FAudioParameterTransition ID="trans" input="Init" target=0 time="rX" />
+		<!-- ejemplo parametros
+		<FAudioParameter ID="X" input=0 />
+		<FAudioParameterOscilator ID="oscilador" input="X" frecuencia=0.5 amplitud=1 extern />
+		<FAudioParameterRange ID="range" inmin=-1 inmax=1 outmin=0 outmax=0.2 />
+		<FAudioParameterTransition ID="transition" input="1" target="0" time="0" />
+		-->
+	</FAudioParameters>
+	<FAudioGraph>
+		<FAudioNodeTube>
+			<FAudioNodeTone tone="rY" volume="trans" />
+			<FAudioNodeWav volume="trans" loop=1 filename="carrier.wav" />
+			<FAudioNodePitch amount="rY" />
+			<FAudioNodeRDelay amount=0.1 volume=0.2 />
+		</FAudioNodeTube>
+		<!-- ejemplo nodos
+		<FAudioNodeMix volumeA=1 volumeB=1 >
+			<FAudioNodeTube>
+				<FAudioNodeTone tone=880 />
+				<FAudioNodeVolume volume=0.2 />
+				<FAudioNodeDelay amount=1 />
+				<FAudioNodeRDelay amount=1 />
+				<FAudioNodePitch amount=-0.5 />
+				<FAudioNodeCompressor limit=32000 ratio=20 attack=1 release=1 />
+			</FAudioNodeTube>
+		</FAudioNodeMix>
+		-->
+	</FAudioGraph>
+</FAudio>

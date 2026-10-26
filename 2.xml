@@ -1,0 +1,16 @@
+<FAudio>
+	<FAudioParameters>
+		<FAudioParameterRange ID="suave" input="Y" inmin=0 inmax=1 outmin=-0.25 outmax=0 />
+		<FAudioParameterRange ID="notY" input="Y" inmin=0 inmax=1 outmin=1 outmax=0 />
+	</FAudioParameters>
+	<FAudioGraph>
+		<FAudioNodeMix volumeA=0 volumeB=1 >
+			<FAudioNodeTone tone=110 />
+			<FAudioNodeTube>
+				<FAudioNodeTone tone=110 />
+				<FAudioNodePitch amount="suave" />
+			</FAudioNodeTube>
+		</FAudioNodeMix>
+		
+	</FAudioGraph>
+</FAudio>

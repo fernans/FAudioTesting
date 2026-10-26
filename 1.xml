@@ -1,0 +1,17 @@
+<FAudio>
+	<FAudioParameters>
+		<FAudioParameterRange ID="suave" input="X" inmin=0 inmax=1 outmin=0 outmax=0.4 />
+	</FAudioParameters>
+	<FAudioGraph>
+		<FAudioNodeTube>
+			<FAudioNodeDelay amount=1 />
+			<FAudioNodeMix volumeA=0 volumeB=1 >
+				<FAudioNodeNull />
+				<FAudioNodeTube>
+					<FAudioNodeDelay amount=0.1 enabled=0 />
+					<FAudioNodePitch amount="suave" enabled=1 />
+				</FAudioNodeTube>
+			</FAudioNodeMix>
+		</FAudioNodeTube>
+	</FAudioGraph>
+</FAudio>

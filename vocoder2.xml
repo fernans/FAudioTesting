@@ -1,0 +1,82 @@
+<Root>
+<FAudio>
+	<FAudioParameters>
+	</FAudioParameters>
+	<FAudioGraph>
+	<FAudioNodeTube>
+		<FAudioNodeMix>
+			<FAudioNodeMix>
+				<FAudioNodeMix>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=125 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTube>
+							<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+							<FAudioNodeBiquad frec=125 amount=-20 q=0.1 mode=3 />
+						</FAudioNodeTube>
+					</FAudioNodeVocoder>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=210 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTube>
+							<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+							<FAudioNodeBiquad frec=210 amount=-20 q=0.1 mode=3 />
+						</FAudioNodeTube>
+					</FAudioNodeVocoder>
+				</FAudioNodeMix>
+				<FAudioNodeMix>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=360 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTube>
+							<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+							<FAudioNodeBiquad frec=360 amount=-20 q=0.1 mode=3 />
+						</FAudioNodeTube>
+					</FAudioNodeVocoder>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=600 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTube>
+							<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+							<FAudioNodeBiquad frec=600 amount=-20 q=0.1 mode=3 />
+						</FAudioNodeTube>
+					</FAudioNodeVocoder>
+				</FAudioNodeMix>
+			</FAudioNodeMix>
+			<FAudioNodeMix>
+				<FAudioNodeMix>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=1020 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTube>
+							<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+							<FAudioNodeBiquad frec=1020 amount=-20 q=0.1 mode=3 />
+						</FAudioNodeTube>
+					</FAudioNodeVocoder>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=1725 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTube>
+							<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+							<FAudioNodeBiquad frec=1725 amount=-20 q=0.1 mode=3 />
+						</FAudioNodeTube>
+					</FAudioNodeVocoder>
+				</FAudioNodeMix>
+				<FAudioNodeMix>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=2900 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTube>
+							<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+							<FAudioNodeBiquad frec=2900 amount=-20 q=0.1 mode=3 />
+						</FAudioNodeTube>
+					</FAudioNodeVocoder>
+					<FAudioNodeVocoder>
+						<FAudioNodeBiquad frec=5000 amount=-20 q=0.1 mode=3 />
+						<FAudioNodeTube>
+							<FAudioNodeWav volume=1 loop=1 filename="carrier.wav" />
+							<FAudioNodeBiquad frec=5000 amount=-20 q=0.1 mode=3 />
+						</FAudioNodeTube>
+					</FAudioNodeVocoder>
+				</FAudioNodeMix>
+			</FAudioNodeMix>
+		</FAudioNodeMix>
+	<FAudioNodeDelay amount=3 />
+	<FAudioNodeVolume volume=20 />
+	</FAudioNodeTube>	
+	</FAudioGraph>
+</FAudio>
+</Root>

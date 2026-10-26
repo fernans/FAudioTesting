@@ -1,0 +1,31 @@
+<Header>
+	<Name value="megaphone" />
+	<Icon value="Icons/item-icono" />
+	<Background value="Backs/capa-ayuda-muestra" />
+</Header>
+<FAudio>
+	<FAudioParameters>
+		<FAudioParameter ID="Y" input=0.5 />
+		<FAudioParameter ID="X" input=0.5 />
+		<FAudioParameterRange ID="rYOverdrive" input="Y" outmin=0.5 outmax=0.25 />
+		<FAudioParameterRange ID="rY" input="Y" outmin=500 outmax=2000 />
+	</FAudioParameters>
+	<FAudioGraph>
+			<FAudioNodeTube >
+				
+				 <FAudioNodeOverdrive gain=0.08 level="rYOverdrive" /> <!---->
+				
+				 <FAudioNodeBiquad frec=400 amount=0 q=0.3 mode=2 />  <!---->
+				 <FAudioNodeBiquad frec=3600 amount=0 q=0.3 mode=1 /> <!---->
+				
+				 <FAudioNodeBiquad frec="rY" amount=0 q=0.3 mode=3 /> <!---->
+				<!-- <FAudioNodeEQparam frecuencia="rY" q=0.3 volumen=8 /> <!---->
+				<FAudioNodeBiquad frec="rY" q=0.3 amount=8 mode=5 /> <!---->
+				
+				 <FAudioNodeMix volumeA=0.85 volumeB=0.15 > <!---->
+					 <FAudioNodeNull /> <!---->
+					 <FAudioNodeDelay amount=0.1 /> <!---->
+				 </FAudioNodeMix> <!---->
+			</FAudioNodeTube>
+	</FAudioGraph>
+</FAudio>
